@@ -46,4 +46,8 @@ class TaskListFragment : Fragment(), TaskListContract.View {
         this.tasks = tasks
         setupRecyclerView(tasks)
     }
+
+    override fun onNewTaskAdded(task: Task) {
+        taskListAdapter?.notifyDataSetChanged()
+    }
 }

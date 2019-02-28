@@ -10,10 +10,14 @@ interface TaskListContract {
     interface Presenter {
         fun attachView(view: TaskListContract.View)
 
+        fun addNewTask(task: Task)
+
         fun getAllTasks()
     }
 
     interface View {
         fun onTasksLoaded(tasks: List<Task>)
+
+        fun onNewTaskAdded(task: Task)
     }
 }
