@@ -16,8 +16,6 @@ class TaskListActivity : AppCompatActivity() {
 
     private val addNewTaskRequestCode = 100
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

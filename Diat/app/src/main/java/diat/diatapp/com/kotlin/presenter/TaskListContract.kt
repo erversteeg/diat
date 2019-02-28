@@ -1,6 +1,7 @@
 package diat.diatapp.com.kotlin.presenter
 
 import diat.diatapp.com.kotlin.model.Task
+import java.util.*
 
 /**
  * Created by Eric on 2/9/2019.
@@ -16,7 +17,7 @@ interface TaskListContract {
     }
 
     interface View {
-        fun onTasksLoaded(tasks: List<Task>)
+        fun onTasksLoaded(tasks: LinkedList<Task>)
 
         fun onNewTaskAdded(task: Task)
     }
